@@ -48,9 +48,9 @@ const AnimePage = () => {
               type="text"
               value={`cd C:/Users/User/Desktop/EXTRA/Anime && mkdir ${param
                 .get("name")
-                ?.replace(/\s+/g, "-")} && cd ${param
+                ?.replace(/:|\s/g, "-")} && cd ${param
                 .get("name")
-                ?.replace(/\s+/g, "-")} && ani-cli -d ${param.get(
+                ?.replace(/:|\s/g, "-")} && ani-cli -d ${param.get(
                 "name"
               )} -e 1-${param.get("episodes")}`}
             />
