@@ -1,9 +1,10 @@
 "use client";
+
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useRef } from "react";
 
-const page = () => {
+const AnimePage = () => {
   const param = useSearchParams();
   const watch = useRef(null);
   const download = useRef(null);
@@ -60,4 +61,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AnimePage;
