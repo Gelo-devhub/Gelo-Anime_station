@@ -10,15 +10,15 @@ const AnimePage = () => {
   const download = useRef(null);
 
   const copyWatch = () => {
-    watch.current?.select();
+    watch.current.select();
     document.execCommand("copy");
-    watch.current?.blur();
+    watch.current.blur();
   };
   console.log(watch.current);
   const copyDownload = () => {
-    download.current?.select();
+    download.current.select();
     document.execCommand("copy");
-    download.current?.blur();
+    download.current.blur();
   };
 
   return (
