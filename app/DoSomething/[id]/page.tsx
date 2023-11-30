@@ -26,7 +26,7 @@ const AnimePage = () => {
       <div className="w-full flex flex-col justify-center items-center ">
         <div className=" bg-gray-800 mt-14 pb-5 rounded-lg overflow-hidden">
           <div className=" w-[350px] h-[450px] relative ">
-            <Image fill src={param.get("img")} />
+            <Image fill alt="anime-images" src={param.get("img")} />
           </div>
           <h1 className=" text-2xl text-center mt-3">{param.get("name")}</h1>
           <div className=" px-2">
