@@ -27,6 +27,7 @@ function AnimeCard({ anime, index }: Prop) {
   const imglink = `https://shikimori.one${anime.image.original}`;
   return (
     <Link
+      target="_blank"
       href={{
         pathname: `DoSomething/${anime.name}`,
         query: {
